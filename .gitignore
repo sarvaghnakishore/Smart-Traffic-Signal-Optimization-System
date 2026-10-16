@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+ENV/
+env/
+
+# Node / Frontend
+node_modules/
+.next/
+out/
+.vercel
+*.log
+
+# Large Datasets (Exceeds GitHub limits: UA-DETRAC raw images are ~19GB)
+backend/dataset/
+dataset/
+*.zip
+*.tar.gz
+
+# Environment variables
+.env
+.env*.local
+
+# Operating System / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

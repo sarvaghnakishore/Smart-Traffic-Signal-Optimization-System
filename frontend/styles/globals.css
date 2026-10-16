@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-950: #070a1a;
+  --color-navy-900: #0d1433;
+  --color-navy-800: #141c47;
+  --color-navy-700: #1c2661;
+  --color-traffic-red: #ef4444;
+  --color-traffic-yellow: #eab308;
+  --color-traffic-green: #22c55e;
+  --color-traffic-blue: #3b82f6;
+}
+
+@layer components {
+  .navy-card {
+    @apply bg-navy-900/80 backdrop-blur-xl border border-white/5 rounded-[1.5rem] shadow-2xl;
+  }
+  
+  .navy-card-header {
+    @apply border-b border-white/5 p-4 flex items-center justify-between;
+  }
+  
+  .navy-card-body {
+    @apply p-6;
+  }
+  
+  .btn-traffic-red {
+    @apply bg-gradient-to-r from-rose-600 to-rose-700 hover:from-rose-500 hover:to-rose-600 text-white font-bold py-3 px-6 rounded-xl shadow-[0_4px_12px_rgba(225,29,72,0.3)] transition-all active:scale-95;
+  }
+  
+  .btn-traffic-green {
+    @apply bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-500 hover:to-emerald-600 text-white font-bold py-3 px-6 rounded-xl shadow-[0_4px_12px_rgba(16,185,129,0.3)] transition-all active:scale-95;
+  }
+  
+  .btn-traffic-blue {
+    @apply bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white font-bold py-2 px-6 rounded-xl shadow-[0_4px_12px_rgba(37,99,235,0.3)] transition-all active:scale-95;
+  }
+}

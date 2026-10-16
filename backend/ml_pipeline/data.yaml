@@ -1,0 +1,16 @@
+# YOLOv8 Dataset Configuration for UA-DETRAC
+
+# Absolute path to the extracted dataset root
+path: d:/smart-traffic-full-project/backend/dataset/extracted_dataset/content/UA-DETRAC/DETRAC_Upload
+train: images/train  # train images
+val: images/val      # validation images
+
+# Number of classes
+nc: 4
+
+# Vehicle classes relevant to Smart Traffic System
+names:
+  0: car
+  1: motorcycle
+  2: bus
+  3: truck
