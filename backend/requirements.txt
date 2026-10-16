@@ -1,0 +1,12 @@
+
+fastapi
+uvicorn[standard]
+pymongo
+opencv-python
+ultralytics
+numpy
+python-multipart
+pydantic
+httpx
+aiofiles
+python-dotenv
